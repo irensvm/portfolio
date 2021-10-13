@@ -1,5 +1,15 @@
-.body {
+body {
   transition: 0, 3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 244, 244);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+
 }
 
 .switch {
@@ -24,7 +34,7 @@
 }
 
 .dark {
-  background-color: rgb(105, 109, 109);
+  background-color: rgb(46, 48, 48);
   transition: 0, 3s;
 }
 
@@ -40,4 +50,26 @@
 
 .dark .flicker {
   transform: translateX(40px);
+
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+}
+
+.main-text {
+    width: 50%;
+    padding: 30px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(236, 233, 233);
+    text-align: center;
 }
